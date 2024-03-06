@@ -18,3 +18,10 @@ clickstream_counts_rdd = spark.sparkContext.parallelize(sample_clickstream_count
 # Create a DataFrame from the RDD of sample clickstream counts
 clickstream_sample_df = clickstream_counts_rdd.toDF(['source_page', 'target_page', 'link_category', 'link_count'])
 
+clickstream_sample_df.show()
+
+# Read the target directory (`./cleaned/clickstream/`) into a DataFrame (`clickstream`)
+clickstream = spark.read.option('delimiter', '\t').option('header', True).option('inferSchema', True).csv('./cleaned/clickstream/')
+
+# Display the DataFrame to the notebook
+clickstream.show()
