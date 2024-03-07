@@ -1,7 +1,4 @@
-# PySpark and Big Data Project -  Solutions
-* [View Solution Notebook](./solution.html)
-
-* [Project Page Link](https://www.codecademy.com/courses/big-data-pyspark/projects/pyspark-common-crawl)
+# PySpark and Big Data Project
 
 ## Task Group 1 - Analyzing Common Crawl Data with RDDs
 
